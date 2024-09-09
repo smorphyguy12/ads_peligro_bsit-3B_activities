@@ -53,5 +53,5 @@ Route::get('courses/create', function () {
 
 Route::get('/course/{id}/students', function ($id) {
     $course = Course::find($id);
-    return $course->student;
+    return $course->students;
 });
